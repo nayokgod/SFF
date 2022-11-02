@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+main{
+    border: 1px solid red;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+}
+
+section{
+    margin:  20px;
+
+}
+
+.content1{
+    padding-top: 50px;
+
+}
+
+.content1 img:nth-of-type(1){
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 80px;
+
+}
+
+.content1 img:nth-of-type(2){
+    display: block;
+    margin: 40px auto 0 auto;
+    width: 250px;
+    height: 250px;
+}
+
+.content2 > p:nth-of-type(1){
+    text-align: center;
+    margin: 50px;
+}
+
+.content2 > p:nth-of-type(2){
+    text-align: center;
+    margin-top: 40px;
+}
+
+.content2 form{
+    margin: 50px auto 0 auto;
+    background-color: black;
+    color: white;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+
+}
+
+.content2 form input{
+    border: none;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+}
+
+.content2 > div{
+    margin-top: 40px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content2 > div > div{
+    width: 300px;
+    height: 100px;
+    display: flex;
+}
+
+.content2 > div > div > div{
+    font-size: 18px;
+}
+
+.content2 > div > div > div:nth-of-type(1) p{
+    margin-top: 10px;
+}
+
+.content2 > div > div > div:nth-of-type(2){
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.content2 > div > div > div:nth-of-type(2) p{
+    width: 60px;
+    padding: 5px 0;
+    text-align: center;
+    background-color: bisque;
+    transition: all 0.2s;
+}
+
+.content2 > div > div > div:nth-of-type(2) p:hover{
+    background-color: rgb(211, 147, 147);
+}
+
+.content2 > div button{
+    margin-top: 40px;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+.content3{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.content3 img{
+     width: 200px;
+     height:  100px;
+}
